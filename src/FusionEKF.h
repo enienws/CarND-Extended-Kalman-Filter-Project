@@ -32,6 +32,9 @@ public:
   KalmanFilter ekf_;
 
 private:
+  Eigen::VectorXd PolarToCartesian(Eigen::VectorXd cartesian);
+
+private:
   // check whether the tracking toolbox was initialized or not (first measurement)
   bool is_initialized_;
 
